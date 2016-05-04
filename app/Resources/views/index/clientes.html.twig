@@ -1,0 +1,17 @@
+{% extends '::base.html.twig' %}
+
+{% block headTitle %}{% endblock %}
+{% block body %}
+    <div>
+    Clientes con pedido superior a 30
+    </div>
+    {% for pedido in clientes %}
+
+        <div>
+            <strong>Nombre:</strong> {{ pedido.nombre }}
+            <strong>Precio:</strong> {{ pedido.precio }}
+        </div>
+
+    {% endfor %}
+
+{% endblock %}

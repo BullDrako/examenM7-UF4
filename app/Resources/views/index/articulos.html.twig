@@ -1,0 +1,18 @@
+{% extends '::base.html.twig' %}
+
+{% block headTitle %}{{ title }}{% endblock %}
+
+{% block body %}
+    <div>
+        Articulos del pedido
+    </div>
+    {% for pedido in articulos %}
+        <div>
+            <strong>ID Articulo:</strong> {{ pedido.id }}
+            <strong>Nombre Articulo:</strong> {{ pedido.nombre }}
+            <strong>Precio Articulo:</strong> {{ pedido.precio }}
+        </div>
+
+    {% endfor %}
+
+{% endblock %}

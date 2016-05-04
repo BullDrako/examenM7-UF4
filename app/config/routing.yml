@@ -1,0 +1,19 @@
+user:
+    resource: "@UserBundle/Resources/config/routing.yml"
+
+app.index:
+    resource: "@AppBundle/Controller/IndexController.php"
+    type: annotation
+
+app.clientes:
+    resource: "@AppBundle/Controller/ClienteController.php"
+    type: annotation
+    #prefix: /cliente
+
+app.pedidos:
+    resource: "@AppBundle/Controller/PedidoController.php"
+    type: annotation
+
+app.articulos:
+    resource: "@AppBundle/Controller/ArticuloController.php"
+    type: annotation

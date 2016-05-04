@@ -1,0 +1,20 @@
+{% extends '::base.html.twig' %}
+
+{% block headTitle %}{% endblock %}
+
+{% block body %}
+    <div>
+        Pedidos de un cliente id
+    </div>
+    {% for pedido in pedidos %}
+
+        <div>
+            <strong>ID:</strong> {{ pedido.id }}
+            <strong>Fecha:</strong> {{ pedido.fecha|date("d/m/Y H:i:s") }}
+            <strong>Cliente:</strong> {{ pedido.nombre }}
+            <strong>Precio:</strong> {{ pedido.precio }}
+        </div>
+
+    {% endfor %}
+
+{% endblock %}
